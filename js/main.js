@@ -115,7 +115,7 @@ function saveWeatherData(response) {
 
 function showGetWeatherError (error) {
     myWeather = null;
-    console.log(error);
+    errorView();
 }
 
 
