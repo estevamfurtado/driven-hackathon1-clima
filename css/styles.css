@@ -7,9 +7,10 @@ body, * {
 body {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(139, 197, 92);
+    background-color: rgb(240, 65, 41);
     color: white;
     padding: 50px;
+    overflow: hidden;
 }
 
 .main {
@@ -19,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .message {
@@ -36,16 +38,33 @@ input.message__location {
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(0, 0, 0, 0.10);
     cursor: pointer;
     color: white;
     text-align: center;
     border: none;
 }
 input.message__location::placeholder{
-    color:rgba(255, 255, 255, 0.20);
+    color:rgba(255, 255, 255, 0.082);
 }
 
 .message__location:hover {
     background-color: rgba(255, 255, 255, 0.20);
+}
+
+
+
+
+.bg {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 100%;
+}
+
+.floatingEmoji {
+    position: absolute;
 }
